@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public interface IBarkable
+namespace Behaviors
 {
-    void OnBarked(Transform barkerTransform, float barkStrength);
+    public interface IBarkable
+    {
+        void OnBarked(Transform barkerTransform, float barkStrength);
+    }
 }

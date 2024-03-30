@@ -1,17 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
+using Behaviors;
 using UnityEngine;
 
-public class BarkableBox : MonoBehaviour, IBarkable
+namespace Furniture
 {
-    [SerializeField] private Rigidbody2D _rigidbody2D;
-    
-    public void OnBarked(Transform barkerTransform, float barkStrength)
+    public class BarkableBox : MonoBehaviour, IBarkable
     {
-        var emitterPosition = barkerTransform.position;
-        var targetPosition = transform.position;
+        [SerializeField] private Rigidbody2D _rigidbody2D;
+    
+        public void OnBarked(Transform barkerTransform, float barkStrength)
+        {
+            var emitterPosition = barkerTransform.position;
+            var targetPosition = transform.position;
         
-        _rigidbody2D.AddForce(new Vector2(targetPosition.x - emitterPosition.x, 
-            targetPosition.y - emitterPosition.y) * barkStrength);
-    }
+            _rigidbody2D.AddForce(new Vector2(targetPosition.x - emitterPosition.x, 
+                targetPosition.y - emitterPosition.y) * barkStrength);
+        }
+    } 
 }
