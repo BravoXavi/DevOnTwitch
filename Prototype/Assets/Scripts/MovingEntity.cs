@@ -6,7 +6,7 @@ namespace Character.Controllers
     public class MovingEntity : MonoBehaviour
     {
         [SerializeField] protected Rigidbody2D _rigidbody2D;
-        [SerializeField] protected SpriteRenderer _sprite;
+        [SerializeField] private SpriteRenderer _sprite;
 
         private bool _isLookingRight;
 
@@ -15,17 +15,18 @@ namespace Character.Controllers
             _isLookingRight = true;
         }
 
-        protected void FlipIfNeeded(float xMovementInput)
+        protected void FlipIfNeeded()
         {
             if (_rigidbody2D == null || _sprite == null) return;
             
-            if (xMovementInput == 0 ||
-                (_isLookingRight && xMovementInput > 0) || 
-                (!_isLookingRight && xMovementInput < 0))
+            var xVelocity = _rigidbody2D.velocity.x;
+            if (xVelocity == 0.0f || 
+                _isLookingRight && xVelocity >= 0.01f || 
+                !_isLookingRight && xVelocity <= -0.01f)
             {
                 return;
             }
-            
+
             _sprite.flipX = _isLookingRight;
             _isLookingRight = !_isLookingRight;
         }

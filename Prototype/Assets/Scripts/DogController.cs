@@ -1,6 +1,5 @@
-using System;
+using System.Collections;
 using Behaviors;
-using Global.Layers;
 using UnityEngine;
 
 namespace Character.Controllers
@@ -16,7 +15,7 @@ namespace Character.Controllers
         
         private float _xMovement;
         private bool _grounded;
-        
+
         protected override void Awake()
         {
             base.Awake();
@@ -39,7 +38,7 @@ namespace Character.Controllers
             
             if (_rigidbody2D.velocity.x != 0)
             {
-                FlipIfNeeded(_xMovement);
+                FlipIfNeeded();
             }
         }
 
@@ -65,18 +64,14 @@ namespace Character.Controllers
         
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!_grounded)
-            {
-                _grounded = true;
-            }
+            if (_grounded) return;
+            _grounded = true;
         }
         
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (_grounded)
-            {
-                _grounded = false;
-            }
+            if (!_grounded) return;
+            _grounded = false;
         }
         
         private void CheckJump()
