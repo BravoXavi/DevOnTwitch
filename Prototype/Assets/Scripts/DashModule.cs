@@ -9,17 +9,14 @@ namespace Character.Controllers
         [SerializeField] private float _dashForce;
         [SerializeField] private float _dashTime;
         [SerializeField] private float _dashCooldown;
-        
-        private bool _isDashing;
-        private bool _canDash;
 
-        public bool IsDashing => _isDashing;
-        public bool CanDash => _canDash;
+        public bool IsDashing { get; private set; }
+        public bool CanDash { get; private set; }
 
         private void Awake()
         {
-            _isDashing = false;
-            _canDash = true;
+            IsDashing = false;
+            CanDash = true;
         }
 
         public void TriggerDash(Rigidbody2D rigidbody2D)
@@ -29,21 +26,21 @@ namespace Character.Controllers
 
         private IEnumerator Dash(Rigidbody2D rigidBody2D)
         {
-            _canDash = false;
-            _isDashing = true;
+            CanDash = false;
+            IsDashing = true;
             
             var originalGravity = rigidBody2D.gravityScale;
             rigidBody2D.gravityScale = 0;
-            int movementSign = Math.Sign(transform.localScale.x);
-            rigidBody2D.velocity = new Vector2(_dashForce * movementSign, 0);
+            var movementSign = Math.Sign(transform.localScale.x);
+            rigidBody2D.velocity = new Vector2((_dashForce * movementSign) * Time.deltaTime, 0);
 
             yield return new WaitForSeconds(_dashTime);
             
             rigidBody2D.gravityScale = originalGravity;
-            _isDashing = false;
+            IsDashing = false;
 
             yield return new WaitForSeconds(_dashCooldown);
-            _canDash = true;
+            CanDash = true;
         }
     }
 }

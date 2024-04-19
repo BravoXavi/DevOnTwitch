@@ -1,3 +1,4 @@
+using System;
 using Behaviors;
 using Global.Layers;
 using UnityEngine;
@@ -34,40 +35,37 @@ namespace Character.Controllers
         private void Update()
         {
             _xMovement = Input.GetAxisRaw("Horizontal");
-            CheckJump();
-            CheckBark();
-
+            CheckMoveset();
+            
             if (_rigidbody2D.velocity.x != 0)
             {
-                FlipIfNeeded();
+                FlipIfNeeded(_xMovement);
             }
-            
+        }
+
+        private void CheckMoveset()
+        {
+            CheckJump();
+            CheckBark();
             CheckDash();
         }
         
-        //Reduce speed smoothly
-
         private void FixedUpdate()
         {
-            if (_rigidbody2D == null)
-            {
-                return;
-            }
-
-            if (!_dashModule.IsDashing)
-            {
-                AddMovement();
-            }
+            UpdateMovement();
         }
 
-        private void AddMovement()
+        private void UpdateMovement()
         {
-            _rigidbody2D.velocity = new Vector2(_xMovement * _speed, _rigidbody2D.velocity.y);
+            if (!_dashModule.IsDashing)
+            {
+                _rigidbody2D.velocity = new Vector2((_xMovement * _speed) * Time.deltaTime, _rigidbody2D.velocity.y);
+            }
         }
         
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!_grounded && LayerUtils.IsInLayer(other.gameObject, LayerUtils.Strings.GROUND))
+            if (!_grounded)
             {
                 _grounded = true;
             }
@@ -75,7 +73,7 @@ namespace Character.Controllers
         
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (_grounded && LayerUtils.IsInLayer(other.gameObject, LayerUtils.Strings.GROUND))
+            if (_grounded)
             {
                 _grounded = false;
             }
