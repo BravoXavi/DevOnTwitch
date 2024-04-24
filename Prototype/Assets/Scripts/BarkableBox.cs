@@ -1,6 +1,4 @@
-using System;
 using Behaviors;
-using Character.Controllers;
 using UnityEngine;
 
 namespace Furniture

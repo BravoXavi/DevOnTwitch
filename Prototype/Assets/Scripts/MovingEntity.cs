@@ -9,6 +9,7 @@ namespace Character.Controllers
         [SerializeField] private SpriteRenderer _sprite;
 
         private bool _isLookingRight;
+        private const float _flipVelocityThreshold = 0.01f;
 
         protected virtual void Awake()
         {
@@ -20,9 +21,10 @@ namespace Character.Controllers
             if (_rigidbody2D == null || _sprite == null) return;
             
             var xVelocity = _rigidbody2D.velocity.x;
-            if (xVelocity == 0.0f || 
-                _isLookingRight && xVelocity >= 0.01f || 
-                !_isLookingRight && xVelocity <= -0.01f)
+            
+            if (IsBetweenThreshold(xVelocity) ||
+                (_isLookingRight && xVelocity >= _flipVelocityThreshold) || 
+                (!_isLookingRight && xVelocity <= -_flipVelocityThreshold))
             {
                 return;
             }
@@ -30,5 +32,8 @@ namespace Character.Controllers
             _sprite.flipX = _isLookingRight;
             _isLookingRight = !_isLookingRight;
         }
+
+        private bool IsBetweenThreshold(float value) => 
+            value is < _flipVelocityThreshold and > -_flipVelocityThreshold;
     }
 }

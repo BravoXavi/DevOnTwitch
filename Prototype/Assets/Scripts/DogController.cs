@@ -1,10 +1,14 @@
-using System.Collections;
-using Behaviors;
 using UnityEngine;
 
 namespace Character.Controllers
 {
-    public class DogController : MovingEntity, IHitable
+    //Dash vs Jump
+    //Enemy AI smooth
+    //Player movement physics
+    //Furniture breaking
+    //HP bars
+    
+    public class DogController : MovingEntity
     {
         [SerializeField] private DashModule _dashModule;
         [SerializeField] private BarkModule _barkModule;
@@ -34,19 +38,14 @@ namespace Character.Controllers
         private void Update()
         {
             _xMovement = Input.GetAxisRaw("Horizontal");
-            CheckMoveset();
+            CheckJump();
+            CheckBark();
+            CheckDash();
             
             if (_rigidbody2D.velocity.x != 0)
             {
                 FlipIfNeeded();
             }
-        }
-
-        private void CheckMoveset()
-        {
-            CheckJump();
-            CheckBark();
-            CheckDash();
         }
         
         private void FixedUpdate()
@@ -98,16 +97,6 @@ namespace Character.Controllers
             }
         }
         
-        public void OnHit(int damage)
-        {
-            if (_hpModule)
-            {
-                return;
-            }
-            
-            _hpModule.ReduceHP(damage);
-        }
-
         private void OnDeadDog()
         {
             Debug.Log("C MURIO EL PERRETE");

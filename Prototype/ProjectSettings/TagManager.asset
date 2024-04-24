@@ -13,12 +13,12 @@ TagManager:
   - Ground
   - Water
   - UI
-  - Barkable
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Furniture
+  - MainCharacter
+  - Enemy
+  - Dasher
+  - Platforms
+  - Damage
   - 
   - 
   - 
@@ -42,4 +42,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Decoration
+    uniqueID: 410677695
+    locked: 0
+  - name: Furniture
+    uniqueID: 1208335693
+    locked: 0
+  - name: Enemy
+    uniqueID: 473839719
+    locked: 0
+  - name: MainCharacter
+    uniqueID: 1075731957
     locked: 0

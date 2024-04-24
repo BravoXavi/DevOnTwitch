@@ -2,6 +2,6 @@
 {
     public interface IHitable
     {
-        void OnHit(int damage);
+        void OnDamageReceived(int damage = 1);
     }
 }

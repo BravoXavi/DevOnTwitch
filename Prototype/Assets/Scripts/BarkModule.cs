@@ -19,13 +19,10 @@ namespace Character.Controllers
             var detectedTargets = Physics2D.OverlapCircleAll(transform.position, _barkRadius);
             foreach (var target in detectedTargets)
             {
-                if (!LayerUtils.IsInLayer(target.gameObject, LayerUtils.Strings.BARKABLE))
+                if (target.TryGetComponent<IBarkable>(out var barkableItem))
                 {
-                    continue;
+                    barkableItem?.OnBarked(transform, _barkStrength);
                 }
-
-                var barkableItem = target.gameObject.GetComponent<IBarkable>();
-                barkableItem?.OnBarked(transform, _barkStrength);
             }
         }
         
