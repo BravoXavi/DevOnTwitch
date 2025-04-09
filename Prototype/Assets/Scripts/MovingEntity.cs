@@ -6,6 +6,7 @@ namespace Character.Controllers
     public class MovingEntity : MonoBehaviour
     {
         [SerializeField] protected Rigidbody2D _rigidbody2D;
+        [SerializeField] protected BoxCollider2D _collider2D;
         [SerializeField] private SpriteRenderer _sprite;
 
         private bool _isLookingRight;

@@ -8,6 +8,7 @@ namespace Global.Layers
         {
             public static readonly string GROUND = "Ground";
             public static readonly string BARKABLE = "Barkable";
+            public static readonly string MAINCHAR = "MainCharacter";
         }
         
         public static bool IsInLayer(GameObject go, string layer) => 

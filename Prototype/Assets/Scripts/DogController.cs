@@ -1,32 +1,30 @@
+using System;
 using UnityEngine;
 
 namespace Character.Controllers
 {
-    //Dash vs Jump
-    //Enemy AI smooth
-    //Player movement physics
-    //Furniture breaking
-    //HP bars
-    
     public class DogController : MovingEntity
     {
+        [SerializeField] private DogStatsObject _dogStats;
         [SerializeField] private DashModule _dashModule;
         [SerializeField] private BarkModule _barkModule;
         [SerializeField] private HPModule _hpModule;
+        [SerializeField] private LayerMask _characterLayer;
+        [SerializeField] private Animator _dogAnimator;
         
-        [SerializeField] private float _speed; 
-        [SerializeField] private float _jumpForce;
-        
-        private float _xMovement;
         private bool _grounded;
-
-        protected override void Awake()
-        {
-            base.Awake();
-            _xMovement = 0.0f;
-            _grounded = true;
-        }
-
+        private bool _jumpHeld;
+        private bool _jumpPressed;
+        private bool _hasToJump;
+        private bool _coyoteAllowed;
+        private bool _doubleJumpAllowed;
+        
+        private float _jumpPressedTime;
+        private float _groundLeftTime;
+        
+        private Vector2 _movementInput;
+        private Vector2 _frameVelocity;
+        
         private void Start()
         {
             if (_hpModule != null)
@@ -37,8 +35,8 @@ namespace Character.Controllers
 
         private void Update()
         {
-            _xMovement = Input.GetAxisRaw("Horizontal");
-            CheckJump();
+            GetMovementInput();
+            
             CheckBark();
             CheckDash();
             
@@ -50,36 +48,109 @@ namespace Character.Controllers
         
         private void FixedUpdate()
         {
-            UpdateMovement();
+            ExecuteHorizontalMovement();
+            ExecuteJump();
+            HandleGravity();
+            HandleCollisions();
+            
+            _rigidbody2D.velocity = _frameVelocity;
+        }
+        
+        private void GetMovementInput()
+        {
+            _jumpPressed = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.W);
+            _jumpHeld = Input.GetButton("Jump") || Input.GetKey(KeyCode.W);
+            _movementInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            
+            if (_jumpPressed)
+            {
+                _hasToJump = true;
+                _jumpPressedTime = Time.time;
+            }
+        }
+        
+        private void ExecuteHorizontalMovement()
+        {
+            if (_movementInput.x != 0)
+            {
+                var sign = Math.Sign(_movementInput.x);
+                _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, sign * _dogStats.MaxSpeed, _dogStats.MaxSpeedDelta);
+                return;
+            }
+
+            if (_movementInput.x == 0)
+            {
+                _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, _dogStats.MaxSpeedDelta);
+            }
+        }
+        
+        private void ExecuteJump()
+        {
+            if (!_grounded && !_coyoteAllowed)
+            {
+                return;
+            }
+            
+            if (Time.time - _jumpPressedTime > _dogStats.JumpBuffering)
+            {
+                _hasToJump = false;
+                return;
+            }
+                
+            if (_hasToJump)
+            {
+                _dogAnimator.SetBool("Jumping", true);
+                _frameVelocity.y = _dogStats.JumpForce;
+                _hasToJump = false;
+                _coyoteAllowed = false;
+            }
         }
 
-        private void UpdateMovement()
+        private void HandleGravity()
         {
-            if (!_dashModule.IsDashing)
+            var shouldApplyModifier = !_jumpHeld && !_grounded && _frameVelocity.y > 0.0f;
+            _frameVelocity.y = Mathf.MoveTowards(
+                _frameVelocity.y,
+                _dogStats.MaxGravity, 
+                shouldApplyModifier ? _dogStats.MaxGravityDelta * _dogStats.JumpReleasedModifier 
+                    : _dogStats.MaxGravityDelta );
+
+            if (_coyoteAllowed && !_grounded && Time.time - _groundLeftTime > _dogStats.CoyoteTime)
             {
-                _rigidbody2D.velocity = new Vector2((_xMovement * _speed) * Time.deltaTime, _rigidbody2D.velocity.y);
+                _coyoteAllowed = false;
             }
         }
         
-        private void OnTriggerEnter2D(Collider2D other)
+        private void HandleCollisions()
         {
-            if (_grounded) return;
-            _grounded = true;
-        }
-        
-        private void OnTriggerExit2D(Collider2D other)
-        {
-            if (!_grounded) return;
-            _grounded = false;
-        }
-        
-        private void CheckJump()
-        {
-            if (Input.GetKeyDown(KeyCode.W) && _grounded)
+            bool groundHit = Physics2D.BoxCast(
+                _collider2D.bounds.center, 
+                _collider2D.size/2.0f, 0, Vector2.down, _dogStats.CollisionDistance, _characterLayer);
+            
+            bool ceilingHit = Physics2D.BoxCast(
+                _collider2D.bounds.center, 
+                _collider2D.size/2.0f, 0, Vector2.up, _dogStats.CollisionDistance, _characterLayer);
+
+            if (ceilingHit)
             {
-                _rigidbody2D.AddForce(new Vector2(0, _jumpForce));
+                _frameVelocity.y = Mathf.Min(0, _frameVelocity.y);
             }
-        }        
+
+            if (!_grounded && groundHit)
+            {
+                _grounded = true;
+                _coyoteAllowed = true;
+                _dogAnimator.SetBool("Jumping", false);
+            }
+
+            if (_grounded && !groundHit)
+            {
+                _grounded = false;
+                _groundLeftTime = Time.time;
+            }
+        }
+
+        #region Dog Moveset
         
         private void CheckDash()
         {
@@ -101,6 +172,8 @@ namespace Character.Controllers
         {
             Debug.Log("C MURIO EL PERRETE");
         }
-    }  
+        
+        #endregion
+    }
 }
 
