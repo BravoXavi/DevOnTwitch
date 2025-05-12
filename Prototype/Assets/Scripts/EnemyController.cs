@@ -10,7 +10,7 @@ public class EnemyController : MovingEntity
     
     private void Update()
     {
-        if (_rigidbody2D.velocity.x != 0)
+        if (_rigidbody2D.linearVelocity.x != 0)
         {
             FlipIfNeeded();
         }
@@ -28,7 +28,7 @@ public class EnemyController : MovingEntity
         var directionVector = new Vector2(mainCharacterPosition.x - currentPosition.x,
                 mainCharacterPosition.y - currentPosition.y).normalized;
 
-        _rigidbody2D.velocity = directionVector * _enemySpeed;
+        _rigidbody2D.linearVelocity = directionVector * _enemySpeed;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

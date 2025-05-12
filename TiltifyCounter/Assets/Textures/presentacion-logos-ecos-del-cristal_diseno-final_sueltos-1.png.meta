@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 9a9bb5331fc427f4ea48b9cd4abfa31f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6877613912139095113
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_0
+  - first:
+      213: 5103758828937013653
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_1
+  - first:
+      213: 7485197109040637863
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_2
+  - first:
+      213: 267061539957912243
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_3
+  - first:
+      213: -4572735762240957102
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_4
+  - first:
+      213: 1900343239321326918
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_5
+  - first:
+      213: -75277353052391736
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_6
+  - first:
+      213: -2767650408601766359
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_7
+  - first:
+      213: -8957681502563697630
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_8
+  - first:
+      213: -1374275565658797130
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_9
+  - first:
+      213: -3860873626461959977
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_10
+  - first:
+      213: 37428170259081259
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_11
+  - first:
+      213: -1985661300830877550
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_12
+  - first:
+      213: -8131360236459766605
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_13
+  - first:
+      213: -4408151720373907575
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_14
+  - first:
+      213: 6024110543074501732
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_15
+  - first:
+      213: 2604894791006312582
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_16
+  - first:
+      213: 3528567522829902578
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_17
+  - first:
+      213: -4912364964658172133
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_18
+  - first:
+      213: 642882055803286199
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_19
+  - first:
+      213: -8859861146136823010
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_20
+  - first:
+      213: -6459087551798245681
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_21
+  - first:
+      213: 1479008410654935994
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_22
+  - first:
+      213: 287203340720013177
+    second: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1426
+        height: 586
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cd557f961327f50800000000000000
+      internalID: 6877613912139095113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 530
+        width: 84
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599ed023d9134d640800000000000000
+      internalID: 5103758828937013653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 401
+        width: 112
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a7e526cc13c0e760800000000000000
+      internalID: 7485197109040637863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 153
+        width: 137
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b23c5e3e0bc4b300800000000000000
+      internalID: 267061539957912243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 303
+        width: 141
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25517e73d016a80c0800000000000000
+      internalID: -4572735762240957102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_5
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 46
+        width: 13
+        height: 447
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64510139b106f5a10800000000000000
+      internalID: 1900343239321326918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_6
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 363
+        width: 112
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c63eaf65af84fef0800000000000000
+      internalID: -75277353052391736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 278
+        width: 121
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926b3d4fd945799d0800000000000000
+      internalID: -2767650408601766359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_8
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 278
+        width: 128
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c7a9c122cefa380800000000000000
+      internalID: -8957681502563697630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_9
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 278
+        width: 141
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb886d77a79dece0800000000000000
+      internalID: -1374275565658797130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_10
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 278
+        width: 98
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d88f0c74eb6b6ac0800000000000000
+      internalID: -3860873626461959977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 127
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28a2e8f8b8f48000800000000000000
+      internalID: 37428170259081259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_12
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 152
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2984cbf31938174e0800000000000000
+      internalID: -1985661300830877550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_13
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 284
+        width: 54
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc441d52fa972f80800000000000000
+      internalID: -8131360236459766605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_14
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 284
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98f061f9d5913d2c0800000000000000
+      internalID: -4408151720373907575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_15
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 284
+        width: 35
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46424af2f90f99350800000000000000
+      internalID: 6024110543074501732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_16
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 92
+        width: 128
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6885237d202762420800000000000000
+      internalID: 2604894791006312582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_17
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 89
+        width: 146
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2a144877df7f030800000000000000
+      internalID: 3528567522829902578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_18
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 92
+        width: 73
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fa97a6716c3dbb0800000000000000
+      internalID: -4912364964658172133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_19
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 92
+        width: 98
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b2b0a8d2d9fbe800800000000000000
+      internalID: 642882055803286199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_20
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 216
+        width: 59
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bba39aa337b0580800000000000000
+      internalID: -8859861146136823010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_21
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 92
+        width: 104
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc60be5e716bc56a0800000000000000
+      internalID: -6459087551798245681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_22
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 92
+        width: 150
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb07e8305e768410800000000000000
+      internalID: 1479008410654935994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_23
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 92
+        width: 118
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ffbedaae95cf300800000000000000
+      internalID: 287203340720013177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 31da23e1ea2bdae4c8e487c727de8605
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_0: 6877613912139095113
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_1: 5103758828937013653
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_10: -3860873626461959977
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_11: 37428170259081259
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_12: -1985661300830877550
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_13: -8131360236459766605
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_14: -4408151720373907575
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_15: 6024110543074501732
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_16: 2604894791006312582
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_17: 3528567522829902578
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_18: -4912364964658172133
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_19: 642882055803286199
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_2: 7485197109040637863
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_20: -8859861146136823010
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_21: -6459087551798245681
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_22: 1479008410654935994
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_23: 287203340720013177
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_3: 267061539957912243
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_4: -4572735762240957102
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_5: 1900343239321326918
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_6: -75277353052391736
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_7: -2767650408601766359
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_8: -8957681502563697630
+      presentacion-logos-ecos-del-cristal_diseno-final_sueltos-1_9: -1374275565658797130
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

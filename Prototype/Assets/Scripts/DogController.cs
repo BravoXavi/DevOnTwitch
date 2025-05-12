@@ -40,7 +40,7 @@ namespace Character.Controllers
             CheckBark();
             CheckDash();
             
-            if (_rigidbody2D.velocity.x != 0)
+            if (_rigidbody2D.linearVelocity.x != 0)
             {
                 FlipIfNeeded();
             }
@@ -53,7 +53,7 @@ namespace Character.Controllers
             HandleGravity();
             HandleCollisions();
             
-            _rigidbody2D.velocity = _frameVelocity;
+            _rigidbody2D.linearVelocity = _frameVelocity;
         }
         
         private void GetMovementInput()

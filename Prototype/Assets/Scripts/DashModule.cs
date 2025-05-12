@@ -40,7 +40,7 @@ namespace Character.Controllers
             var originalGravity = rigidBody2D.gravityScale;
             rigidBody2D.gravityScale = 0;
             var movementSign = Math.Sign(transform.localScale.x);
-            rigidBody2D.velocity = new Vector2((_dashForce * movementSign) * Time.deltaTime, 0);
+            rigidBody2D.linearVelocity = new Vector2((_dashForce * movementSign) * Time.deltaTime, 0);
 
             yield return new WaitForSeconds(_dashTime);
             

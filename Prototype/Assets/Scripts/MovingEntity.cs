@@ -21,7 +21,7 @@ namespace Character.Controllers
         {
             if (_rigidbody2D == null || _sprite == null) return;
             
-            var xVelocity = _rigidbody2D.velocity.x;
+            var xVelocity = _rigidbody2D.linearVelocity.x;
             
             if (IsBetweenThreshold(xVelocity) ||
                 (_isLookingRight && xVelocity >= _flipVelocityThreshold) || 
